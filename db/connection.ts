@@ -9,6 +9,6 @@ if (!process.env.PGDATABASE) {
     throw new Error("PGDATABASE not set");
 }
 
-const connection = new Pool();
+const db = new Pool();
 
-export default connection
+export default db;
